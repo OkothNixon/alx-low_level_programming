@@ -3,8 +3,8 @@
  * _memcpy - copies memory area
  * @dest - destination memory area
  * @scr - source memory area
- * @n - bites copied from memory area
- * * Return: string.
+ * @n - bytes copied from memory area
+ * Return: string.
  */
 char *_memcpy(char *dest,char *src, unsigned int n)
 {
