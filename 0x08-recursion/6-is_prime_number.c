@@ -5,7 +5,7 @@ int fakefake(int prime, int primediv);
  * is_prime_number - get prime number of given number
  * @n: is a natural number
  * Return: 1 if n is a prime number and 0 if not.
- *  function that returns 1 if the input integer is a prime number, otherwise return 0.
+ *  function returns 1 if input integer is a prime number, otherwise return 0.
  */
 
 int is_prime_number(int n)
