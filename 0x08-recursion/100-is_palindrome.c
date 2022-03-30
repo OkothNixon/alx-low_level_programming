@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 #include <stdio.h>
 int contador(char *s1, int cont1);
 int fakefake(char *s, char *ss, int cont);
