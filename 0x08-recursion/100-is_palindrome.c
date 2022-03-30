@@ -7,7 +7,7 @@ int fakefake(char *s, char *ss, int cont);
  * is_palindrome - set true or false for palindrome string
  * @s: is an address of memory
  * Return: true or false for palindrome string
- * function that returns 1 if a string is a palindrome and 0 if not.
+ * function returns 1 if string is palindrome 0 if not.
  * An empty string is a palindrome
  */
 
