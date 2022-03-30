@@ -8,8 +8,8 @@
  * Return: true or false if the s1 and s2 can considered equal
  * s2 can contain the special character *
  * The special char * can replace any string (including an empty string)
- * function compares two strings and returns 1 if strings can be considered identical
- * otherwise return 0.
+ * function compares strings and returns 1 if strings are considered identical
+ * otherwise return 0
  */
 
 int wildcmp(char *s1, char *s2)
