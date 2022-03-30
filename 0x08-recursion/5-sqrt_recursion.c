@@ -4,11 +4,9 @@
 int fakefake(int n, int s);
 
 /**
- * Write a function that returns the natural square root of a number.
  * _sqrt_recursion - get the natural square root of a number
  * @n: is the natural number
  * Return: The natural square root
- * If n does not have a natural square root, the function should return -1
  */
 
 int _sqrt_recursion(int n)
@@ -36,4 +34,3 @@ else
 return (fakefake(n, s + 1));
 
 }
-
