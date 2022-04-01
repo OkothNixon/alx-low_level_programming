@@ -2,28 +2,26 @@
 #include <stdlib.h>
 
 /**
- * main - Prints the sum of the argument only if they are digits
+ * main - multiplies two arguments
  * @argc: The argument count
  * @argv: The argument vector
- * Return: 0 if no errors, 1 if invalid argument
+ * Return: 0 - i it recieves two arguments and -1 if it does not
  */
 
 int main(int argc, char *argv[])
 {
-	int i, j, sum = 0;
+	int total = 1, i;
 
 
-	for (i = 1; i < argc; i++)
+	if (argc == 3)
 	{
-		for (j = 0; argv[i][j]; j++)
+		for (i = 1; i < argc; i++)
 		{
-			if (argv[i][j] < '0' || argv[i][j] > '9')
-			{
-				return (printf("Error\n"), 1);
-			}
+			total *= atoi(argv[i]);
 		}
-		sum += atoi(argv[i]);
+		printf("%d\n", total);
+		return (0);
 	}
-	printf("%d\n", sum);
-	return (0);
+	printf("Error\n");
+	return (1);
 }
