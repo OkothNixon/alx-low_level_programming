@@ -1,60 +1,29 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int power(int b);
-
 /**
-  * main - print the multiplication of two arguments
-  * @argc: has the length of the arguments
-  * @argv: has the arguments
-  * Return: 0 to indicate a good working of the program
-  */
+ * main - Prints the sum of the argument only if they are digits
+ * @argc: The argument count
+ * @argv: The argument vector
+ * Return: 0 if no errors, 1 if invalid argument
+ */
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
+	int i, j, sum = 0;
 
-	int i, j, cont, num[2] = {0, 0};
 
-	if (argc < 3)
-		printf("Error\n");
-
-	else
+	for (i = 1; i < argc; i++)
 	{
-		for (i = 1; argv[i] != '\0'; i++)
+		for (j = 0; argv[i][j]; j++)
 		{
-			for (cont = 0; (argv[i])[cont] != '\0'; cont++)
-				;
-
-			for (j = 0, cont--; (argv[i])[j] != '\0'; j++)
+			if (argv[i][j] < '0' || argv[i][j] > '9')
 			{
-				if ((argv[i])[cont - j] == '-')
-				{
-					num[i - 1] *= -1;
-					break;
-				}
-				else
-					num[i - 1] = power(j) * ((argv[i])[cont - j] - '0') + num[i - 1];
+				return (printf("Error\n"), 1);
 			}
 		}
-		printf("%d\n", num[0] * num[1]);
+		sum += atoi(argv[i]);
 	}
+	printf("%d\n", sum);
 	return (0);
 }
-
-/**
-  * power - get the power 10 times b
-  * @b: is the times of 10
-  * Return: the power 10 times b
-  */
-
-int power(int b)
-{
-	int i, num = 1;
-
-	for (i = 0; i < b; i++)
-	{
-		num *= 10;
-	}
-	return (num);
-}
-
