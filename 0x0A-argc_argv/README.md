@@ -1,5 +1,5 @@
 # 0x0A. C - argc, argv
-
+new dir
 ## Resources:books:
 Read or watch:
 * [Arguments to main](https://intranet.hbtn.io/rltoken/9qSBELMTQW1ldB0yGS6VZQ)
