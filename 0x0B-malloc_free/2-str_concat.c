@@ -3,12 +3,12 @@
 #include <stdlib.h>
 
 /**
- *  function that concatenates two strings
- * str_concat - fills memory with a constant byte
- * @s1: string 1 address
- * @s2: string 2 address
- * Return: an address of a third string
- */
+  * str_concat - fills memory with a constant byte
+  * @s1: string 1 address
+  * @s2: string 2 address
+  * Return: an address of a third string
+  * function that concatenates two strings
+  */
 
 char *str_concat(char *s1, char *s2)
 {
