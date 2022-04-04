@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
   * create_array - fills memory with a constant byte
@@ -8,7 +9,7 @@
   * Return: an address
   */
 
-char *create_array(unsigned int size, char c);
+char *create_array(unsigned int size, char c)
 {
 	char *s;
 	unsigned int i;
