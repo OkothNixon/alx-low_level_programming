@@ -24,17 +24,17 @@ char *argstostr(int ac, char **av)
 			cont++;
 	}
 
-	conca = malloc(cont * sizeof(char) + ac + 1);
-	if (!conca)
+	okoth = malloc(cont * sizeof(char) + ac + 1);
+	if (!okoth)
 		return (NULL);
 
 	for (i = 0; i < ac; i++)
 	{
 		for (j = 0; av[i][j] != '\0'; j++, k++)
-			conca[k] = av[i][j];
-		conca[k] = '\n';
+			okoth[k] = av[i][j];
+		okoth[k] = '\n';
 		k++;
 	}
-	conca[k] = '\0';
-	return (conca);
+	okoth[k] = '\0';
+	return (okoth);
 }
