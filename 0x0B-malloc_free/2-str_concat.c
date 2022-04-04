@@ -2,7 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* function that concatenates two strings
+/**
+ *  function that concatenates two strings
  * str_concat - fills memory with a constant byte
  * @s1: string 1 address
  * @s2: string 2 address
@@ -41,4 +42,3 @@ char *str_concat(char *s1, char *s2)
 	s[i] = '\0';
 	return (s);
 }
-
