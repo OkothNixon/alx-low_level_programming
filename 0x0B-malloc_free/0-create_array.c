@@ -7,10 +7,9 @@
   * @size: is the size of the pointer
   * @c: is a letter
   * Return: an address
-  * function creates array of chars, and initializes it with specific char
   */
 
-char *create_array(unsigned int size, char c);
+char *create_array(unsigned int size, char c)
 {
 	char *s;
 	unsigned int i;
