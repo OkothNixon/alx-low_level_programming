@@ -3,12 +3,12 @@
 #include <stdlib.h>
 
 /**
-* alloc_grid - Return a pointer to a 2 dimensional array of integers.
-* @width: is the width of a bidementional array
-* @height: is the height of a bidimentional array
-* Return: an address
-* itabidi msome
-*/
+  * alloc_grid - Return a pointer to a 2 dimensional array of integers.
+  * @width: is the width of a bidementional array
+  * @height: is the height of a bidimentional array
+  * Return: an address
+  * itabidi msome
+  */
 
 int **alloc_grid(int width, int height)
 {
