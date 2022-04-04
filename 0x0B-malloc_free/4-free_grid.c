@@ -3,11 +3,11 @@
 #include <stdlib.h>
 
 /**
-  *function frees 2 dimensional grid previously created by alloc_grid function.
   * free_grid - fills memory with a constant byte
   * @grid: nixon
   * @height: size of the rows
   * Return: nothing
+  * function frees 2 dimensional grid prev created by alloc_grid
   */
 
 void free_grid(int **grid, int height)
