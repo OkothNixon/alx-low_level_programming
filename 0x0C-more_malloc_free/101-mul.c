@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * adding_all_mul - sum all the addition to know the multiplication result
