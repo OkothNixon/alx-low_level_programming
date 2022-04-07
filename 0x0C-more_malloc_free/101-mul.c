@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 /**
- * _atoi_digit - convert a char to integer.
- * @x: character to convert.
- * Return: integer.
- **/
+  * _atoi_digit - convert a char to integer.
+  * @x: character to convert.
+  * Return: integer.
+  */
 
 int _atoi_digit(char x)
 {
@@ -17,10 +17,10 @@ int _atoi_digit(char x)
 }
 
 /**
- * _isNumber - Define if a string is a number.
- * @argv: Pointer to string.
- * Return: success (0).
- **/
+  * _isNumber - Define if a string is a number.
+  * @argv: Pointer to string.
+  * Return: success (0).
+  */
 int _isNumber(char *argv)
 {
 	int i;
@@ -32,11 +32,11 @@ int _isNumber(char *argv)
 }
 
 /**
- *_calloc - allocate array of size * nmemb.
- * @nmemb: number of elements.
- * @size: size of element.
- * Return: pointer to array.
- **/
+  * _calloc - allocate array of size * nmemb.
+  * @nmemb: number of elements.
+  * @size: size of element.
+  * Return: pointer to array.
+  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
@@ -55,14 +55,14 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 }
 
 /**
- * mul_array - multiply two arrays.
- * @a1: first array.
- * @len1: length of array a1.
- * @a2:  char.
- * @a3: array for result.
- * @lena: length of array a3.
- * Return: pointer to array.
- **/
+  * mul_array - multiply two arrays.
+  * @a1: first array.
+  * @len1: length of array a1.
+  * @a2:  char.
+  * @a3: array for result.
+  * @lena: length of array a3.
+  * Return: pointer to array.
+  */
 
 void *mul_array(char *a1, int len1, char a2, char *a3, int lena)
 {
@@ -87,11 +87,13 @@ void *mul_array(char *a1, int len1, char a2, char *a3, int lena)
 
 	return (a3);
 }
+
 /**
- * print_array - print all digits of array.
- * @nb: number of elements to print.
- * @a: array of elements.
- **/
+  * print_array - print all digits of array.
+  * @nb: number of elements to print.
+  * @a: array of elements.
+  */
+
 void print_array(char *a, int nb)
 {
 	int i = 0;
@@ -108,11 +110,11 @@ void print_array(char *a, int nb)
 }
 
 /**
- *main - print the multiplication of 2 numbers.
- *@argc: array length.
- *@argv: array.
- *Return: 0.
- */
+  * main - print the multiplication of 2 numbers.
+  * @argc: array length.
+  * @argv: array.
+  * Return: 0.
+  */
 
 int main(int argc, char *argv[])
 {
