@@ -3,9 +3,9 @@
 /**
  * adding_all_mul - sum all the addition to know the multiplication result
  * @a: number 1
- * @len_a: length of number 1
+ * @len_a: lenght of number 1
  * @b: number 2
- * @len_b: length of number 2
+ * @len_b: lenght of number 2
  * Return: Addition pointer to the total resul of the  multiplication
  */
 add_t *adding_all_mul(char *a, int len_a, char *b, int len_b)
