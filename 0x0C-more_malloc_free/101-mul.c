@@ -23,6 +23,7 @@ int i, j;
 			{  printf("Error\n");
 			exit(98); }
 		}
+		
 	}
 	mul = atoi(argv[1]) *  atoi(argv[2]);
 	printf("%lu\n", mul);
