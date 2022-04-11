@@ -8,7 +8,7 @@
   * @age: is the age of the dog
   * @owner: is the owner of the dog
   * Return: a void pointer
-  * Tuwache kufork tu....by nixo
+  * Tuwache kufork tu....by nixon
   */
 dog_t *new_dog(char *name, float age, char *owner)
 {
