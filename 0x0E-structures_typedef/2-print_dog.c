@@ -1,20 +1,24 @@
 #include "dog.h"
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
-  * print_dog - fills memory with a constant byte
-  * @d: is the pointer of the strut
-  * Return: nothing
-  * 
-  * Tuwache kufork tu....by nixon
+ * print_dog - prints a dog
+ *
+ * @d: dog to print
+ *
+ * Return: void
  */
 void print_dog(struct dog *d)
 {
-	if (d != NULL)
-	{
-		printf("Name: %s\n", (d->name == NULL) ? "(nil)" : d->name);
-        printf("Age: %.6f\n", d->age);
-		printf("Owner: %s\n", (d->owner == NULL) ? "(nil)" : d->owner);
-	}
+	if (d == 0)
+		return;
+	if (d->name == 0)
+		printf("Name: (nil)\n");
+	else
+		printf("Name: %s\n", d->name);
+	printf("Age: %f\n", d->age);
+	if (d->owner == 0)
+		printf("Owner: (nil)\n");
+	else
+		printf("Owner: %s\n", d->owner);
 }
