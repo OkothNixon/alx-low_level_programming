@@ -1,5 +1,5 @@
-#ifndef _MAIN_H_
-#define _MAIN_H_
+#ifndef LINK_L
+#define LINK_L
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
