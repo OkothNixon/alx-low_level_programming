@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * free_node - frees space accupied by linked list
+ * free_node - frees space occupied by linked list
  * @node: node
  */
 
