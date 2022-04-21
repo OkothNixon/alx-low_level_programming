@@ -7,10 +7,11 @@
   */
 size_t list_len(const list_t *h)
 {
-	size_t i;
+	if (h == NULL)
+		return (0);
 
-	for (i = 0; h != NULL; i++)
-		h = h->next;
-	return (i);
+	if (h->next == NULL)
+		return (1);
+
+	return (1 + list_len(h->next));
 }
-
