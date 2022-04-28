@@ -1,25 +1,32 @@
 #include "main.h"
+
 /**
-  * print_binary - fills memory with a constant byte
-  * @n: is the size of the pointer
-  * Return: nothing
-  */
+ * print_binary - prints a binary representation of a number
+ * @n: number
+ */
+
 void print_binary(unsigned long int n)
 {
-	unsigned long int condif = 1;
+	int i = 0, len = 0;
+	unsigned long int temp = n;
 
 	if (n == 0)
 	{
 		_putchar('0');
 		return;
 	}
-	condif = condif << 63;
-	for (; !(n & condif); )
-		condif = condif >> 1;
 
-	for (; condif; )
+	while (temp)
 	{
-		_putchar(n & condif ? '1' : '0');
-		condif = condif >> 1;
+		temp >>= 1;
+		len++;
+	}
+
+	for (i = len - 1; i >= 0; i--)
+	{
+		if ((n >> i) & 1)
+			_putchar('1');
+		else
+			_putchar('0');
 	}
 }
