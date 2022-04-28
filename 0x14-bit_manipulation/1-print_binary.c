@@ -5,7 +5,7 @@
   * @n: is the size of the pointer
   * Return: nothing
   */
- 
+
 void print_binary(unsigned long int n)
 {
 	unsigned long int condif = 1;
